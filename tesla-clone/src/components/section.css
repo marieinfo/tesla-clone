@@ -1,0 +1,78 @@
+.wrap{
+    z-index: -3;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-image: url("./../images/solar-panel.jpg"); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    /* vertical */
+    align-items: center;
+    /* horizontal */
+    overflow: hidden;
+    
+}
+.itemtext{
+    z-index: 1;
+padding-top: 13vh;
+}
+.buttongroupe{
+    z-index: 1;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+/* justify-content: space-between; */
+margin-bottom: 25px;
+}
+ @media screen and (max-width: 768px){
+    .buttongroupe{
+    flex-direction: column;}
+}
+.l-button, .r-button{
+background-color: rgba(23, 26, 32, 0.8);
+height: 35px;
+width: 230px;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 100px;
+opacity: 0.85;
+text-transform: uppercase;
+cursor: pointer;
+font-size: 12px;
+margin: 8px;
+}
+.r-button{
+background-color: white;
+opacity: 0.85;
+color: black;
+}
+.down{
+   margin-top: 20px;
+   height: 40px;
+   width: 40px;
+   animation: animation infinite 1.5s;
+   
+}
+@keyframes animation {
+    0%, 20%, 50%, 88%, 100%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(5px);
+    }
+    60%{
+        transform: translateY(3px);
+    }
+}
+.bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
